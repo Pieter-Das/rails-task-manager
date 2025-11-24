@@ -7,3 +7,12 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+Task.find_or_create_by!(title: "Laundry") do |task|
+  task.details = "Do not mix colors!"
+end
+
+Task.find_or_create_by!(title: "Studying") do |task|
+  task.details = "A lot of flashcards to do"
+  task.completed = true
+end
